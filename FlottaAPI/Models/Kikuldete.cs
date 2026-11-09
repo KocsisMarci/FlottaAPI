@@ -15,5 +15,5 @@ public partial class Kikuldete
 
     public DateTime Befejezes { get; set; }
 
-    public virtual ICollection<Kikuldottjarmu> Kikuldottjarmus { get; set; } = new List<Kikuldottjarmu>();
+    public virtual ICollection<Kikuldottjarmu>? Kikuldottjarmus { get; set; } = new List<Kikuldottjarmu>();
 }

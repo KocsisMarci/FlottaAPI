@@ -17,5 +17,5 @@ public partial class Sofor
 
     public string Image { get; set; } = null!;
 
-    public virtual ICollection<Kikuldottjarmu> Kikuldottjarmus { get; set; } = new List<Kikuldottjarmu>();
+    public virtual ICollection<Kikuldottjarmu>? Kikuldottjarmus { get; set; } = new List<Kikuldottjarmu>();
 }
