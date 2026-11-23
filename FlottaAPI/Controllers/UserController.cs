@@ -18,7 +18,7 @@ namespace FlottaAPI.Controllers
 
         [HttpGet("GetAllUser")]
 
-        public IActionResult GetAllUserr()
+        public IActionResult GetAllUser()
         {
             try
             {
@@ -39,8 +39,7 @@ namespace FlottaAPI.Controllers
             try
             {
 
-                var  userek= await _context.Users.ToListAsync();
-                var user = userek.FirstOrDefault(sofor => sofor.Id == id);
+                var user = _context.Users.FirstOrDefault(sofor => sofor.Id == id);
 
                 if (user == null)
                 {

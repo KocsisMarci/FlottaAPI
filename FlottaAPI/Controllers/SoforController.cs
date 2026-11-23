@@ -4,6 +4,7 @@ using FlottaAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Win32.SafeHandles;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using Microsoft.AspNetCore.Authorization;
 namespace FlottaAPI.Controllers
 {
     [Route("api/[controller]")]
@@ -19,6 +20,7 @@ namespace FlottaAPI.Controllers
             _context = context;
         }
 
+        [Authorize]
         [HttpGet("GetAllSofor")]
 
         public IActionResult GetAllSofor()

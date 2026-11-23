@@ -34,6 +34,7 @@ namespace FlottaAPI
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
